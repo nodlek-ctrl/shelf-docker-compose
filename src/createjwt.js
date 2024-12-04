@@ -6,7 +6,7 @@ const __dirname = dirname(fromFileUrl(import.meta.url));
 const envPath = join(__dirname, "../.env");
 
 // Load current .env file
-const env = await load({ envPath });
+const env = await load({ envPath, allowEmptyValues: true });
 const key = env["JWT_SECRET"];
 
 console.log("Loading JWT_SECRET:", key);
