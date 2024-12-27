@@ -54,7 +54,7 @@ mkdir -p volumes/api
 
 1. Create the environment file:
 ```bash
-cp .env.sample .env
+cp .env.example .env
 ```
 
 ## Generating JWT Tokens
